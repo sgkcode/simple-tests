@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    <Console name="Console">
+      <PatternLayout>
+        <Pattern>%d %p [%t] %m%n</Pattern>
+      </PatternLayout>
+      <Filters>
+        <ThresholdFilter level="warn" onMatch="DENY" onMismatch="ACCEPT"/>
+      </Filters>
+    </Console>
+    <File name="File" fileName="target/logs/simple-tests.log">
+      <PatternLayout>
+        <Pattern>%d %p [%t] %m%n</Pattern>
+      </PatternLayout>
+    </File>
+  </Appenders>
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="File" level="error"/>
+    </Root>
+  </Loggers>
+</Configuration>
