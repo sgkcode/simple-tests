@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class ShouldReturnSameValueTest extends CommonConditions {
 
-  @Test
+  @Test(testName = "ShouldReturnSameValueTestNameFromAnnotation")
   public void shouldReturnSameValue() {
     Assert.assertEquals("one", "two");
   }

@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Suite3" verbose="1">
-  <test name="Test3">
+  <test name="ShouldReturnSameValueTest">
     <classes>
       <class name="com.epam.learn.test.ShouldReturnSameValueTest"/>
     </classes>

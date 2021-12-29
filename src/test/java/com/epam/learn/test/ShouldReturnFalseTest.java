@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class ShouldReturnFalseTest extends CommonConditions {
 
-  @Test
+  @Test(testName = "ShouldReturnFalseTestNameFromAnnotation")
   public void shouldReturnFalse() {
     Assert.assertFalse(true);
   }
