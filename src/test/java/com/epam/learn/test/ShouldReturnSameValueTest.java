@@ -9,4 +9,14 @@ public class ShouldReturnSameValueTest extends CommonConditions {
   public void shouldReturnSameValue() {
     Assert.assertEquals("one", "two");
   }
+
+  @Test(testName = "ShouldReturnSameValueTestNameFromAnnotation2")
+  public void shouldReturnSameValue2() {
+    Assert.assertEquals("one", "two");
+  }
+
+  @Test(testName = "ShouldReturnSameValueTestNameFromAnnotation3")
+  public void shouldReturnSameValue3() {
+    Assert.assertEquals("one", "two");
+  }
 }

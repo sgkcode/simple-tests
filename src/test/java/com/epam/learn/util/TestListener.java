@@ -22,7 +22,8 @@ public class TestListener implements ITestListener {
   public void onTestStart(ITestResult result) {
     Method method = result.getMethod().getConstructorOrMethod().getMethod();
     String nameFromTestAnnotation = method.getAnnotation(Test.class).testName();
-    log.info("Running test => " + nameFromTestAnnotation);
+    log.info("Thread Id: " + Thread.currentThread().getId()
+        + " Running test => " + nameFromTestAnnotation);
   }
 
   @Override
